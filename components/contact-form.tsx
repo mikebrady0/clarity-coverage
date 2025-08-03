@@ -31,7 +31,7 @@ export function ContactForm() {
           </div>
         )}
 
-        <form action={action} className="space-y-4">
+        <form action="https://formsubmit.co/bradyinsuranceservice@gmail.com" method="POST" className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <Input name="name" placeholder="Your Name" required disabled={isPending} />
             <Input name="email" placeholder="Email Address" type="email" required disabled={isPending} />

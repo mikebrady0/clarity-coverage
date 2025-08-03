@@ -17,9 +17,6 @@ export default function HomePage() {
             <a href="#services" className="hover:text-blue-200 transition-colors">
               Services
             </a>
-            <a href="#about" className="hover:text-blue-200 transition-colors">
-              About
-            </a>
             <a href="#contact" className="hover:text-blue-200 transition-colors">
               Contact
             </a>
@@ -28,7 +25,7 @@ export default function HomePage() {
             variant="outline"
             className="border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
           >
-            Get Quote
+            <a href="#contact">Get Quote</a>
           </Button>
         </div>
       </header>
@@ -42,15 +39,21 @@ export default function HomePage() {
             got you covered.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
-              Get Started Today
+            <Button
+            
+            size="lg" 
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3"
+            
+            >
+              <a href="#contact">Get Started Today</a>
             </Button>
             <Button
+
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-slate-900 px-8 py-3 bg-transparent"
             >
-              Learn More
+              <a href="#services">Learn More</a>
             </Button>
           </div>
         </div>
@@ -242,7 +245,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 bg-white">
+      <section id="contact" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">Contact Us</h2>
@@ -253,7 +256,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-slate-900 text-white">
+      <section className="py-20 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
@@ -266,8 +269,8 @@ export default function HomePage() {
                 <Phone className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Call Us</h3>
-              <p className="text-slate-200">(555) 123-4567</p>
-              <p className="text-sm text-slate-300">Mon-Fri 8AM-6PM</p>
+              <p className="text-slate-200">(215) 300-8700</p>
+              <p className="text-sm text-slate-300">Mon-Fri 9AM-5PM</p>
             </div>
 
             <div>
@@ -275,7 +278,7 @@ export default function HomePage() {
                 <Mail className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Email Us</h3>
-              <p className="text-slate-200">info@claritycoverage.com</p>
+              <p className="text-slate-200">bradyinsuranceservice@gmail.com</p>
               <p className="text-sm text-slate-300">We'll respond within 24 hours</p>
             </div>
 
@@ -283,9 +286,8 @@ export default function HomePage() {
               <div className="mx-auto w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-4">
                 <MapPin className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Visit Us</h3>
-              <p className="text-slate-200">123 Insurance Way</p>
-              <p className="text-slate-200">Your City, ST 12345</p>
+              <h3 className="text-xl font-semibold mb-2">Located</h3>
+              <p className="text-slate-200">Philadelphia PA</p>
             </div>
           </div>
         </div>
@@ -319,10 +321,8 @@ export default function HomePage() {
             <div>
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-slate-300">
-                <li>About Us</li>
-                <li>Our Team</li>
-                <li>Careers</li>
-                <li>Contact</li>
+                <li><a href="#services">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
 
@@ -338,7 +338,7 @@ export default function HomePage() {
           </div>
 
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-300">
-            <p>&copy; 2024 Clarity Coverage Group. All rights reserved.</p>
+            <p>&copy; 2025 Clarity Coverage Group. All rights reserved.</p>
           </div>
         </div>
       </footer>
